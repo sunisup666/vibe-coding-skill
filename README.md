@@ -44,7 +44,7 @@ vibe-coding-pipeline/
 │   ├── pitfalls.md             # 翻车点自检清单
 │   ├── prompt-tuning.md        # 提示词复盘与回流方法
 │   └── prompts/00-06*.md       # 7 步提示词(数据,自动优化)
-└── skeleton/                   # 起手骨架,make verify 开箱绿
+└── README.md                   # skill简介
 ```
 
 ## 骨架仓库
