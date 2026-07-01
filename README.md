@@ -9,18 +9,18 @@
 **Claude Code:**
 
 ```bash
-git clone https://github.com/<you>/vibe-coding-pipeline.git ~/.claude/skills/vibe-coding-pipeline
+git clone https://github.com/sunisup666/vibe-coding-pipeline.git ~/.claude/skills/vibe-coding-pipeline
 ```
 
 Windows PowerShell:
 
 ```powershell
-git clone https://github.com/<you>/vibe-coding-pipeline.git "$HOME\.claude\skills\vibe-coding-pipeline"
+git clone https://github.com/sunisup666/vibe-coding-pipeline.git "$HOME\.claude\skills\vibe-coding-pipeline"
 ```
 
 **Codex:** 换成 `~/.codex/skills/`,SKILL.md 格式通用。
 
-> 用 `git clone` 装,是因为提示词自优化(回流)要往这个目录 `commit && push`——它必须是你自己的可写 git 仓库。用只读分享/打包方式装的话回流写不动。装完重启 Claude Code。
+> 用 `git clone` 装,是因为提示词自优化(回流)要往这个目录 `commit && push`——它必须是你自己的可写 git 仓库。用只读分享/打包方式装的话回流写不动。装完重启 Claude Code。骨架不用预装,skill 运行时联网从 `project-skeletons` 拉。
 
 ## 用法
 
@@ -49,4 +49,4 @@ vibe-coding-pipeline/
 
 ## 骨架仓库
 
-多语言骨架在独立仓库 `project-skeletons`,每种语言一套业内标准结构,自带 `make verify` 且开箱绿。建议本机 clone 一份缓存(如 `~/project-skeletons`),skill 优先从本地拷,免每次联网。新增语言只动骨架仓库,不动本 skill。
+多语言骨架在独立仓库 `https://github.com/sunisup666/project-skeletons.git`(python-fastapi / java-springboot / go-standard / c-cmake / rust-cargo),每种语言一套业内标准结构,自带 `make verify` 且开箱绿。skill 在第 2 步定语言后**联网浅拉**对应骨架进项目根。新增语言只动骨架仓库,不动本 skill。
